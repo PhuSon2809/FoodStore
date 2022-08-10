@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store | Cart</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/viewCartStyle.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> food store </a>
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="product.html">products</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <a href="viewCart.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+        <a href="creatUser.html"><div  class="fas fa-registered" id=""></div></a>
+        <a href="login.html"><div class="fas fa-user" id="login-btn"></div></a>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- Product section-->
+<section class="cart">
+    <div class="box-container">
+        <h3>List Products</h3>       
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total Price</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <form action="update-quantity">
+                            <tr>
+                            <input type="hidden" name="productId" value=""/>
+                                <th scope="row">1</th>
+                                <td>sdsd</td>
+                                <td>sdvzdvssssssssss<img src="" width="50"/></td>
+                                <td>sds</td>
+                                <td><input type="number" name="quantity" value=""/></td>
+                                <td>sdvsdv</td>
+                                <td><a href="" class="btn"><i class="fas fa-trash"></i></a></td>
+                            </tr>
+                        </form>
+                    </tbody>
+                </table>
+                <h3>Total Amount: $</h3>
+                <a href="#" class="btn">Add more</a>
+                <a href="checkout.html" class="btn">Check out</a>
+    </div>
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> food store <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +914-360-736 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> NongsanDalat@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Dalat, Lamdong - 23 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#products" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> SonTP - SE150552 </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
